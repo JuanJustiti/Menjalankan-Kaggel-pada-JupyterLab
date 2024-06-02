@@ -32,8 +32,11 @@ Untuk menarik data dari Kaggle ke Jupyter Notebook tanpa perlu mendownload datas
 3. Setelah menginstal library `kaggle`, Anda perlu mengimpor library tersebut dan mengatur token API Kaggle Anda. Anda dapat melakukannya dengan menjalankan perintah berikut di Jupyter Notebook:
 
           import kaggle
-          # Atur konfigurasi kaggle
-          kaggle.api.authenticate(api_key='YOUR_API_KEY')
+          # Definisikan variabel kunci API
+          api_key = "kunci_api_anda"
+
+         # Konfigurasi kaggle
+         kaggle.api.authenticate()
 
 Pastikan untuk mengganti `'YOUR_API_KEY'` dengan token API Kaggle Anda.
 
